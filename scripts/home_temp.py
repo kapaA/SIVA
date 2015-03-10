@@ -16,7 +16,7 @@ db = None
 mySQLHost = "localhost";
 mySQLUser = "root";
 mySQLdb   = "siva";
-mySQLpw   = "draco";
+mySQLpw   = "xxxx";
 
 
 #------------------------------------------------------------------------------
