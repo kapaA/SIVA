@@ -1,0 +1,155 @@
+﻿body {
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+	margin: 0px;
+	padding: 20px 10px 0px;
+
+}
+
+.textfield {
+	font-size: 13px;
+	color: #333333;
+	background: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	padding-left: 1px;
+}
+
+.subText {
+		font-size: 14px;
+		color: #797268;
+	}
+
+
+h1 {
+	color: #99CC00;
+	margin: 0px 0px 5px;
+	padding: 0px 0px 3px;
+	font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+	border-bottom: 1px dashed #E6E8ED;
+	text-align: left;
+}
+
+
+a {        /* Main Link */
+	font-size: 14px;
+	color: #666666;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	margin-top: 0;
+	margin-bottom: 0;   
+
+
+}
+.aOn {  /* The Link you are currently on */
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #B8CE3C;
+	font-size: 14px;
+}
+
+.aSubOn{  /* The SubLink you are currently on */
+	color: #B8CE3C;
+}
+
+.aSub {    /* Sub Link */
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font: 13px Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+a:hover {
+	color: #99CC00;
+}
+
+.err {
+	color: #FF9900;
+}
+
+hr {
+	height: 3px;
+	color: #C0C0C0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+/* Table settings */
+
+
+#mytable {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+	width: 50%;
+}
+
+#logintable{
+	padding: 0;
+	margin: 0;
+	width: 20%;
+}
+
+
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;	 
+	font: italic 11px  Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+th {
+	font: bold 11px  Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+
+th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+	
+}
+
+td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+.center{
+	text-align: center;
+}
+
+
+td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
