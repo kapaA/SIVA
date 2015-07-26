@@ -28,9 +28,9 @@
 
 	
 	
-	$LivingRoom = mysql_query("SELECT * FROM tempMeas  WHERE id = 1 LIMIT 3000, 10000");
+	$LivingRoom = mysql_query("SELECT * FROM tempMeas  WHERE id = 4 LIMIT 0, 10000");
+	$MasterBedroom = mysql_query("SELECT * FROM tempMeas  WHERE id = 4 LIMIT 0, 10000");
 	
-	$MasterBedroom = mysql_query("SELECT * FROM tempMeas  WHERE id = 2 LIMIT 7500, 10000");
 	$outRoom = mysql_query("SELECT * FROM tempMeas WHERE id = 3 LIMIT 7000, 10000");
 	
 
@@ -40,7 +40,7 @@
 		$lR[] = array($lRData['time'],(float)$lRData['temp']); 
 	} 
 	while($mBData=mysql_fetch_array($MasterBedroom)){
-		$mB[] = array(($mBData['time']),(float)$mBData['temp']); 
+		$mB[] = array(($mBData['time']),(float)$mBData['bat']); 
 	}
 	while($outData=mysql_fetch_array($outRoom)){
 		$out[] = array(($outData['time']),(float)$outData['temp']); 

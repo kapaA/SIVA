@@ -41,21 +41,19 @@ $(document).ready(function() {
 			<table id="example" class="display" cellspacing="0" width="100%">
 				<thead>
 					<tr>
-						<th>Device</th>
+						<th>Location</th>
 						<th>Temperature</th>
 						<th>Days Online</th>
 						<th>Battery status</th>
-						<th>Time</th>
 					</tr>
 				</thead>
 
 				<tfoot>
 					<tr>
-						<th>Device</th>
+						<th>Location</th>
 						<th>Temperature</th>
 						<th>Days Online</th>
 						<th>Battery status</th>
-						<th>Time</th>
 					</tr>
 				</tfoot>
 
@@ -93,18 +91,16 @@ $(document).ready(function() {
 	
 	
 	while($lRData=mysql_fetch_array($livingRoom)){
-
 	
-	$timeDur =  round((($lRData[seq])));
+	$timeDur =  round((($lRData[seq]*8)/60/60) / 24);
 	$bat = $lRData[bat]/10.0;
 	
 	
 	echo "	<tr>\n"; 
-	echo "		<td class=\"auto-style1\">{$lRData[id]}</td>\n"; 
+	echo "		<td class=\"auto-style1\">{$lRData[room]}</td>\n"; 
 	echo "		<td class=\"auto-style1\">{$lRData[temp]}&#8451; </td>\n"; 
 	echo "		<td class=\"auto-style1\">{$timeDur}</td>\n"; 
 	echo "		<td class=\"auto-style1\">{$bat}V</td>\n"; 
-	echo "		<td class=\"auto-style1\">{$lRData[time]}</td>\n"; 
 	echo "	</tr>\n"; 
 	
 

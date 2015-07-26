@@ -10,8 +10,8 @@ db = None
 
 mySQLHost = "localhost";
 mySQLUser = "root";
-mySQLdb   = "****";
-mySQLpw   = "****";
+mySQLdb   = "siva";
+mySQLpw   = "draco";
 
 
 
